@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Shop</class>
+ <widget class="QMainWindow" name="Shop">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>300</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAccount">
+    <property name="title">
+     <string>Account</string>
+    </property>
+    <addaction name="actionMy_account"/>
+   </widget>
+   <widget class="QMenu" name="menuAdd">
+    <property name="title">
+     <string>Add</string>
+    </property>
+    <addaction name="actionLaptop"/>
+    <addaction name="actionSmartphone"/>
+   </widget>
+   <addaction name="menuAccount"/>
+   <addaction name="menuAdd"/>
+  </widget>
+  <action name="actionMy_account">
+   <property name="text">
+    <string>My account</string>
+   </property>
+  </action>
+  <action name="actionLaptop">
+   <property name="text">
+    <string>Laptop</string>
+   </property>
+  </action>
+  <action name="actionSmartphone">
+   <property name="text">
+    <string>Smartphone</string>
+   </property>
+  </action>
+  <action name="actionMobile">
+   <property name="text">
+    <string>Mobile</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

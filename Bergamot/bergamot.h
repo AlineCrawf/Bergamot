@@ -2,6 +2,7 @@
 #define BERGAMOT_H
 
 #include <QMainWindow>
+#include <user.h>
 
 namespace Ui {
 class Bergamot;

@@ -13,6 +13,7 @@ class Registration : public QDialog
 
 public:
     explicit Registration(QWidget *parent = nullptr);
+    QString to_hash(QString passwd);
     ~Registration();
 
 private slots:
@@ -26,7 +27,6 @@ private slots:
 
 private:
     Ui::Registration *ui;
-    QString to_hash(QString passwd);
 };
 
 #endif // REGISTRATION_H

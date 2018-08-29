@@ -2,7 +2,7 @@
 #include "ui_useracc.h"
 #include <QIcon>
 
-UserAcc::UserAcc(QWidget *parent) :
+UserAcc::UserAcc(QWidget *parent, struct User *user) :
     QDialog(parent),
     ui(new Ui::UserAcc)
 {

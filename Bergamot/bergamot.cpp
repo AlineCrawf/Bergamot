@@ -48,17 +48,17 @@ void Bergamot::on_loginButton_clicked()
         {
             QMessageBox::information(this,"Error","No such file");
         }
-        else{
+        else
+        {
             QTextStream stream(&users);
             bool login = false;
-            int i=0;
-            int a=100;
+            int a=1000000;
             while(a--)
             {
                 QString buffer = stream.readLine();
                 QStringList strl = buffer.split(" ");
 
-                if(buffer=="") continue;
+                if(buffer=="") break;
                 if(strl.at(0)==ui->loginEdit->text()&&strl.at(1)==rg->to_hash(ui->passwordEdit->text()))
                 {
                     login=1;
@@ -68,7 +68,8 @@ void Bergamot::on_loginButton_clicked()
             users.close();
             if(login)
             {
-                Shop *shop = new Shop;
+                User *user = new User(ui->loginEdit->text(),0);
+                Shop *shop = new Shop(nullptr,user);
                 shop->show();
                 this->close();
             }

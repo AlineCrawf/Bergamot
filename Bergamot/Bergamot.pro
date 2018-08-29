@@ -32,7 +32,8 @@ SOURCES += \
     addsmartphone.cpp \
     goods.cpp \
     laptop.cpp \
-    smartphone.cpp
+    smartphone.cpp \
+    user.cpp
 
 HEADERS += \
         bergamot.h \
@@ -43,7 +44,8 @@ HEADERS += \
     addsmartphone.h \
     goods.h \
     laptop.h \
-    smartphone.h
+    smartphone.h \
+    user.h
 
 FORMS += \
         bergamot.ui \
